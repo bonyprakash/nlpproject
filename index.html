@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Movie Ratings</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎬 AI Movie Ratings</h1>
+    
+    <input type="text" id="movieName" placeholder="Enter movie name..." />
+    <button onclick="getMovieData()">Search</button>
+    
+    <div id="result" class="result-box"></div>
+    
+    <h3>Write Your Review:</h3>
+    <textarea id="userReview" rows="4" cols="50"></textarea><br/>
+    <button onclick="analyzeReview()">Analyze Sentiment</button>
+    <div id="sentimentResult"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
